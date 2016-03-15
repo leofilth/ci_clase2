@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Hola extends CI_Controller {
+class ControladorDos extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,18 +21,7 @@ class Hola extends CI_Controller {
 	public function index()
 	{
 		//$this->load->view('welcome_message');
-		$this->load->view('index');
+		$this->load->view('index2');
 	}
-	public function saludo()
-	{
-		$datos["titulo"]="mi titulo desde arreglo";
-		$datos["texto"]="mi texto desde arreglo";
-		$this->load->view('saludo',$datos);
-	}
-	public function otro()
-	{
-		$saludo="saludo desde vista otro";
-		$texto="mi texto desde vista otro";
-		$this->load->view('otro',compact('saludo','texto'));
-	}
+
 }
